@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oblig3", "Oblig3\Oblig3.csproj", "{D800541E-9762-4B9F-A197-4E57CFFA731D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqTest", "LinqTest\LinqTest.csproj", "{47DB88C3-C33C-488C-8373-921982A9465A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D800541E-9762-4B9F-A197-4E57CFFA731D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D800541E-9762-4B9F-A197-4E57CFFA731D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D800541E-9762-4B9F-A197-4E57CFFA731D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D800541E-9762-4B9F-A197-4E57CFFA731D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47DB88C3-C33C-488C-8373-921982A9465A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47DB88C3-C33C-488C-8373-921982A9465A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47DB88C3-C33C-488C-8373-921982A9465A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47DB88C3-C33C-488C-8373-921982A9465A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0C6CA84-8D62-44D5-9C06-06F70FA7280B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿<Window x:Class="Oblig3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oblig3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260*"></ColumnDefinition>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="540*"/>
+
+        </Grid.ColumnDefinitions>
+        <ListView Name="TestListView" Padding="40" Margin="0,-10,0,10" ItemsSource="{Binding}" Grid.ColumnSpan="3" Grid.Column="2" >
+            <ListView.View>
+
+                <GridView >
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Path=Studentname}" />
+                    <GridViewColumn Header="Grade" Width="120" DisplayMemberBinding="{Binding Path=Grade1}" />
+                    <GridViewColumn Header="Course" Width="120" DisplayMemberBinding="{Binding Path=Coursename}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ComboBox x:Name="CourseAlternatives" ItemsSource="{Binding}"  DisplayMemberPath = "Coursename" SelectedValuePath= "Coursename" Grid.Column="0" Margin="11,81,11,287" Text="Select coursename" IsEditable="True"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="155px" SelectionChanged="CourseAlternatives_SelectionChanged"></ComboBox>
+        <TextBox x:Name="StudNameTextBox" TextChanged="OnTextBoxChanged" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,45,0,0" Height="22" Width="155"/>
+        <Button Name="DisplayFailures" Height="20" Width="200" Grid.Column="0" Grid.ColumnSpan="2" Click="DisplayFailures_Click">Display Failures</Button>
+        <ComboBox x:Name="SelectGrades" ItemsSource="{Binding}"  DisplayMemberPath = "Grade1" SelectedValuePath= "Grade1" Margin="0,130,0,0" Text="Select a grade" IsEditable="True"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="155px" SelectionChanged="SelectGrades_SelectionChanged" />
+        <ComboBox x:Name="SelectName" ItemsSource="{Binding}"  DisplayMemberPath = "Studentname" SelectedValuePath= "Studentname" Margin="0,263,0,0" Text="Select a name" IsEditable="True"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="155px" SelectionChanged="SelectName_SelectionChanged" />
+        <ComboBox x:Name="SelectCourse" ItemsSource="{Binding}"  DisplayMemberPath = "Coursename" SelectedValuePath= "Coursename" Margin="0,290,0,0" Text="Select a course" IsEditable="True"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="155px"  Visibility="Collapsed" SelectionChanged="SelectCourse_SelectionChanged"/>
+
+
+
+
+    </Grid>
+
+
+</Window>
