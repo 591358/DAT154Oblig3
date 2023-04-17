@@ -22,7 +22,7 @@ public partial class Dat154Context : DbContext
     public virtual DbSet<Student> Students { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("");
+        => optionsBuilder.UseSqlServer("Data Source=dat154.hvl.no,1443;Initial Catalog=dat154;User ID=dat154_rw;Password=dat154_rw;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
